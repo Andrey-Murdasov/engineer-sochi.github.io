@@ -456,6 +456,7 @@
             }
 
             .text-component.style-2 {
+                text-align: left;
                 color: rgba(0,0,0,0.69);
                 font-family: 'Space Mono', monospace;
                 letter-spacing: -0.05rem;
@@ -512,6 +513,7 @@
             }
 
             .text-component.style-3 {
+                text-align: left;
                 text-transform: uppercase;
                 color: rgba(0,0,0,0.69);
                 font-family: 'Unbounded', sans-serif;
@@ -610,15 +612,18 @@
             }
 
             .text-component.style-6 {
+                text-align: left;
                 max-width: 34.5rem;
                 margin-left: var(--margin-left);
                 margin-right: var(--margin-right);
+                --margin-left: 0;
+                --margin-right: auto;
                 color: #383838;
                 font-family: 'Ubuntu Mono', monospace;
-                letter-spacing: -0.05rem;
+                letter-spacing: -0.075rem;
                 width: 100%;
-                font-size: 1.25em;
-                line-height: 0.875;
+                font-size: 1.375em;
+                line-height: 1;
                 font-weight: 400;
             }
 
@@ -637,6 +642,37 @@
             }
 
             .text-component.style-6 span.p:nth-child(n + 2) {
+                margin-top: 1rem;
+            }
+
+            .text-component.style-8:not(:first-child) {
+                margin-top: 0.5rem !important;
+            }
+
+            .text-component.style-8:not(:last-child) {
+                margin-bottom: 0.5rem !important;
+            }
+
+            .text-component.style-8 {
+                color: #383838;
+                font-family: 'Space Mono', monospace;
+                letter-spacing: -0.075rem;
+                width: 100%;
+                font-size: 0.75em;
+                line-height: 1.125;
+                font-weight: 400;
+            }
+
+            .text-component.style-8 a {
+                color: #70A6DB;
+                text-decoration: none;
+            }
+
+            .text-component.style-8 a:hover {
+                text-decoration: underline;
+            }
+
+            .text-component.style-8 span.p:nth-child(n + 2) {
                 margin-top: 1rem;
             }
 
@@ -1924,6 +1960,36 @@
                 background-color: #DE7A64 !important;
             }
 
+            .divider-component {
+                align-items: center;
+                border: 0;
+                display: flex;
+                justify-content: var(--flex-alignment);
+                min-height: 1rem;
+                padding: 0;
+                position: relative;
+                width: 100%;
+            }
+
+            .divider-component::before {
+                content: '';
+            }
+
+            .divider-component.instance-1:not(:first-child) {
+                margin-top: 0.875rem !important;
+            }
+
+            .divider-component.instance-1:not(:last-child) {
+                margin-bottom: 0.875rem !important;
+            }
+
+            .divider-component.instance-1::before {
+                width: 88rem;
+                background-color: rgba(0,0,0,0.69);
+                height: 3px;
+                border-radius: 0px;
+            }
+
             #footer {
                 margin-top: 1.5rem !important;
             }
@@ -2653,10 +2719,25 @@
                 }
 
                 .text-component.style-6 {
-                    letter-spacing: -0.04375rem;
+                    letter-spacing: -0.065625rem;
                     width: 100%;
                     font-size: 0.75em;
-                    line-height: 0.875;
+                    line-height: 1;
+                }
+
+                .text-component.style-8:not(:first-child) {
+                    margin-top: 0.375rem !important;
+                }
+
+                .text-component.style-8:not(:last-child) {
+                    margin-bottom: 0.375rem !important;
+                }
+
+                .text-component.style-8 {
+                    letter-spacing: -0.065625rem;
+                    width: 100%;
+                    font-size: 0.75em;
+                    line-height: 1.125;
                 }
 
                 .container-component.style-1 {
@@ -3362,6 +3443,18 @@
                     font-size: 1.125em;
                 }
 
+                .divider-component.instance-1:not(:first-child) {
+                    margin-top: 0.875rem !important;
+                }
+
+                .divider-component.instance-1:not(:last-child) {
+                    margin-bottom: 0.875rem !important;
+                }
+
+                .divider-component.instance-1::before {
+                    width: 88rem;
+                }
+
                 #footer {
                     margin-top: 1.125rem !important;
                 }
@@ -3526,6 +3619,10 @@
                     font-size: 0.75em;
                 }
 
+                .text-component.style-8 {
+                    font-size: 0.75em;
+                }
+
                 .container-component.style-1 > .wrapper > .inner {
                     --gutters: 2rem;
                     --padding-vertical: 1.5rem;
@@ -3661,14 +3758,14 @@
             <div class="site-main" role="main">
                 <div class="inner">
                     <section id="home-section">
-                        <h1 id="text05" class="text-component instance-5 style-2">R &amp;D Engineer | Complex Electrical Systems</h1>
+                        <h1 id="text05" class="text-component instance-5 style-2" style="opacity: 1; text-align: center; justify-content: center;"> Engineer | Automation & Autonomous Electrical Systems</h1>
                         <div id="container04" class="container-component instance-4 style-1 columns">
                             <div class="wrapper">
                                 <div class="inner" data-onvisible-trigger="1">
                                     <div>
                                         <div id="image01" class="image-component instance-1">
                                             <span class="frame">
-                                                <img src="assets/images/image01.jpg?v=6df00e10" alt=""/>
+                                                <img src="assets/images/image01.jpg?v=cb693e05" alt=""/>
                                             </span>
                                         </div>
                                     </div>
@@ -3685,7 +3782,7 @@
                         </div>
                         <ul id="icons03" class="icons-component instance-3 style-2">
                             <li>
-                                <a class="n01" href="https://instagram.com/user?username=murdasov_st/" target="_blank" role="button">
+                                <a class="n01" href="https://www.instagram.com/murdasov_st/" target="_blank" role="button">
                                     <svg aria-labelledby="icons03-icon-1-title">
                                         <title id="icons03-icon-1-title">Instagram</title>
                                         <use xlink:href="#icon-85976685de3e4af37529a1ce5d57d2a7"></use>
@@ -3712,7 +3809,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="n04" href="/cdn-cgi/l/email-protection#cba6aabfaea6aabfa2a0aaa4a0aaa28baca6aaa2a7e5a8a4a6" target="_blank" role="button">
+                                <a class="n04" href="/cdn-cgi/l/email-protection#563b3722333b37223f3d37393d373f16313b373f3a7835393b" target="_blank" role="button">
                                     <svg aria-labelledby="icons03-icon-4-title">
                                         <title id="icons03-icon-4-title">Email</title>
                                         <use xlink:href="#icon-c3c8e1063e3b7f84f6b54712741de139"></use>
@@ -3841,15 +3938,19 @@
                                 [Инженерное проектирование — удаленно, любой регион.<br/>Обмеры, шеф-монтаж и СМР — с личным выездом на объекты в Сочи, Адлере и Красной Поляне.]
                             </span>
                         </h1>
+                        <hr id="divider01" class="divider-component instance-1">
+                        <p id="text14" class="text-component instance-14 style-8">
+                            Также занимаюсь системным анализом и разработкой прикладного ПО для астрофизических исследований. Научный проект: <a href="https://andrey-murdasov.github.io/murdasov-research/" target="_blank">перейти</a>
+                        </p>
                     </section>
                     <section id="portfolio1-section">
                         <div id="gallery01" class="gallery-component instance-1">
                             <div class="inner">
                                 <ul>
                                     <li>
-                                        <a href="assets/images/gallery01/90534825_original.png?v=6df00e10" class="thumbnail n01">
+                                        <a href="assets/images/gallery01/90534825_original.png?v=cb693e05" class="thumbnail n01">
                                             <span class="frame deferred">
-                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxNzQgMzExIiB3aWR0aD0iMTc0IiBoZWlnaHQ9IjMxMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/90534825.png?v=6df00e10" alt="Обмерный план ресторана в Сочи."/>
+                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxNzQgMzExIiB3aWR0aD0iMTc0IiBoZWlnaHQ9IjMxMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/90534825.png?v=cb693e05" alt="Обмерный план ресторана в Сочи."/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -3857,9 +3958,9 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="assets/images/gallery01/cd2eed83_original.png?v=6df00e10" class="thumbnail n02">
+                                        <a href="assets/images/gallery01/cd2eed83_original.png?v=cb693e05" class="thumbnail n02">
                                             <span class="frame deferred">
-                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxNzQgMzExIiB3aWR0aD0iMTc0IiBoZWlnaHQ9IjMxMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/cd2eed83.png?v=6df00e10" alt="Обмер ресторана в Сочи."/>
+                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxNzQgMzExIiB3aWR0aD0iMTc0IiBoZWlnaHQ9IjMxMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/cd2eed83.png?v=cb693e05" alt="Обмер ресторана в Сочи."/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -3867,9 +3968,9 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="assets/images/gallery01/3c6e9a0c_original.png?v=6df00e10" class="thumbnail n03">
+                                        <a href="assets/images/gallery01/3c6e9a0c_original.png?v=cb693e05" class="thumbnail n03">
                                             <span class="frame">
-                                                <img src="assets/images/gallery01/3c6e9a0c.png?v=6df00e10" alt="Обмер ресторана в Сочи"/>
+                                                <img src="assets/images/gallery01/3c6e9a0c.png?v=cb693e05" alt="Обмер ресторана в Сочи"/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -3877,9 +3978,9 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="assets/images/gallery01/6f69aded_original.png?v=6df00e10" class="thumbnail n04">
+                                        <a href="assets/images/gallery01/6f69aded_original.png?v=cb693e05" class="thumbnail n04">
                                             <span class="frame deferred">
-                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxNzQgMzExIiB3aWR0aD0iMTc0IiBoZWlnaHQ9IjMxMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/6f69aded.png?v=6df00e10" alt="Обмер пиццерии в Сочи."/>
+                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxNzQgMzExIiB3aWR0aD0iMTc0IiBoZWlnaHQ9IjMxMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/6f69aded.png?v=cb693e05" alt="Обмер пиццерии в Сочи."/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -3887,9 +3988,9 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="assets/images/gallery01/3855c3a8_original.png?v=6df00e10" class="thumbnail n05">
+                                        <a href="assets/images/gallery01/3855c3a8_original.png?v=cb693e05" class="thumbnail n05">
                                             <span class="frame deferred">
-                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxNzQgMzExIiB3aWR0aD0iMTc0IiBoZWlnaHQ9IjMxMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/3855c3a8.png?v=6df00e10" alt="Квартира в Краснодаре."/>
+                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxNzQgMzExIiB3aWR0aD0iMTc0IiBoZWlnaHQ9IjMxMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/3855c3a8.png?v=cb693e05" alt="Квартира в Краснодаре."/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -3897,9 +3998,9 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="assets/images/gallery01/6a900de9_original.png?v=6df00e10" class="thumbnail n06">
+                                        <a href="assets/images/gallery01/6a900de9_original.png?v=cb693e05" class="thumbnail n06">
                                             <span class="frame deferred">
-                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyOTAgMzEwIiB3aWR0aD0iMjkwIiBoZWlnaHQ9IjMxMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/6a900de9.png?v=6df00e10" alt="Частный дом 2 этажа."/>
+                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyOTAgMzEwIiB3aWR0aD0iMjkwIiBoZWlnaHQ9IjMxMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/6a900de9.png?v=cb693e05" alt="Частный дом 2 этажа."/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -3907,9 +4008,9 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="assets/images/gallery01/6d1fbff7_original.png?v=6df00e10" class="thumbnail n07">
+                                        <a href="assets/images/gallery01/6d1fbff7_original.png?v=cb693e05" class="thumbnail n07">
                                             <span class="frame deferred">
-                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyODkgMzEwIiB3aWR0aD0iMjg5IiBoZWlnaHQ9IjMxMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/6d1fbff7.png?v=6df00e10" alt="Обмер апартаментов в Сочи."/>
+                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyODkgMzEwIiB3aWR0aD0iMjg5IiBoZWlnaHQ9IjMxMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/6d1fbff7.png?v=cb693e05" alt="Обмер апартаментов в Сочи."/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -3917,9 +4018,9 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="assets/images/gallery01/66723872_original.jpg?v=6df00e10" class="thumbnail n08">
+                                        <a href="assets/images/gallery01/66723872_original.jpg?v=cb693e05" class="thumbnail n08">
                                             <span class="frame">
-                                                <img src="assets/images/gallery01/66723872.jpg?v=6df00e10" alt="Обмер 2х этажные апартаменты."/>
+                                                <img src="assets/images/gallery01/66723872.jpg?v=cb693e05" alt="Обмер 2х этажные апартаменты."/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -3927,9 +4028,9 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="assets/images/gallery01/111339b6_original.png?v=6df00e10" class="thumbnail n09">
+                                        <a href="assets/images/gallery01/111339b6_original.png?v=cb693e05" class="thumbnail n09">
                                             <span class="frame deferred">
-                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyOTEgMzEwIiB3aWR0aD0iMjkxIiBoZWlnaHQ9IjMxMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/111339b6.png?v=6df00e10" alt="Обмер отеля в Сочи."/>
+                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyOTEgMzEwIiB3aWR0aD0iMjkxIiBoZWlnaHQ9IjMxMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/111339b6.png?v=cb693e05" alt="Обмер отеля в Сочи."/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -3950,9 +4051,9 @@
                             <div class="inner">
                                 <ul>
                                     <li>
-                                        <a href="assets/images/gallery02/7bc967fe_original.jpg?v=6df00e10" class="thumbnail n01">
+                                        <a href="assets/images/gallery02/7bc967fe_original.jpg?v=cb693e05" class="thumbnail n01">
                                             <span class="frame">
-                                                <img src="assets/images/gallery02/7bc967fe.jpg?v=6df00e10" alt="Обмерный план ресторана в Сочи"/>
+                                                <img src="assets/images/gallery02/7bc967fe.jpg?v=cb693e05" alt="Обмерный план ресторана в Сочи"/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -3960,9 +4061,9 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="assets/images/gallery02/102bc1e4_original.jpg?v=6df00e10" class="thumbnail n02">
+                                        <a href="assets/images/gallery02/102bc1e4_original.jpg?v=cb693e05" class="thumbnail n02">
                                             <span class="frame">
-                                                <img src="assets/images/gallery02/102bc1e4.jpg?v=6df00e10" alt="Проектирование 1-фазного щита для частного дома в Сочи."/>
+                                                <img src="assets/images/gallery02/102bc1e4.jpg?v=cb693e05" alt="Проектирование 1-фазного щита для частного дома в Сочи."/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -3970,9 +4071,9 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="assets/images/gallery02/9a48b930_original.jpg?v=6df00e10" class="thumbnail n03">
+                                        <a href="assets/images/gallery02/9a48b930_original.jpg?v=cb693e05" class="thumbnail n03">
                                             <span class="frame">
-                                                <img src="assets/images/gallery02/9a48b930.jpg?v=6df00e10" alt="Обмер ресторана в Сочи"/>
+                                                <img src="assets/images/gallery02/9a48b930.jpg?v=cb693e05" alt="Обмер ресторана в Сочи"/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -3980,9 +4081,9 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="assets/images/gallery02/9df7591e_original.jpg?v=6df00e10" class="thumbnail n04">
+                                        <a href="assets/images/gallery02/9df7591e_original.jpg?v=cb693e05" class="thumbnail n04">
                                             <span class="frame">
-                                                <img src="assets/images/gallery02/9df7591e.jpg?v=6df00e10" alt="Однолинейная схема 3-фазного ШР."/>
+                                                <img src="assets/images/gallery02/9df7591e.jpg?v=cb693e05" alt="Однолинейная схема 3-фазного ШР."/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -3990,9 +4091,9 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="assets/images/gallery02/40d6298d_original.png?v=6df00e10" class="thumbnail n05">
+                                        <a href="assets/images/gallery02/40d6298d_original.png?v=cb693e05" class="thumbnail n05">
                                             <span class="frame deferred">
-                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyOTEgMzEwIiB3aWR0aD0iMjkxIiBoZWlnaHQ9IjMxMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery02/40d6298d.png?v=6df00e10" alt="Экспересс-проект ремонта квартиры в Сочи: обмер, электрика, мебель."/>
+                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyOTEgMzEwIiB3aWR0aD0iMjkxIiBoZWlnaHQ9IjMxMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery02/40d6298d.png?v=cb693e05" alt="Экспересс-проект ремонта квартиры в Сочи: обмер, электрика, мебель."/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -4000,9 +4101,9 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="assets/images/gallery02/8cb3d39a_original.jpg?v=6df00e10" class="thumbnail n06">
+                                        <a href="assets/images/gallery02/8cb3d39a_original.jpg?v=cb693e05" class="thumbnail n06">
                                             <span class="frame">
-                                                <img src="assets/images/gallery02/8cb3d39a.jpg?v=6df00e10" alt="Проект электрики веранды в Сочи"/>
+                                                <img src="assets/images/gallery02/8cb3d39a.jpg?v=cb693e05" alt="Проект электрики веранды в Сочи"/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -4023,9 +4124,9 @@
                             <div class="inner">
                                 <ul>
                                     <li>
-                                        <a href="assets/images/gallery03/d08c464c_original.png?v=6df00e10" class="thumbnail n01">
+                                        <a href="assets/images/gallery03/d08c464c_original.png?v=cb693e05" class="thumbnail n01">
                                             <span class="frame deferred">
-                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxNTAgMzExIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjMxMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery03/d08c464c.png?v=6df00e10" alt="Проектирование автономного электроснабжения частного дома в Сочи"/>
+                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxNTAgMzExIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjMxMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery03/d08c464c.png?v=cb693e05" alt="Проектирование автономного электроснабжения частного дома в Сочи"/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -4033,9 +4134,9 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="assets/images/gallery03/0756c52b_original.png?v=6df00e10" class="thumbnail n02">
+                                        <a href="assets/images/gallery03/0756c52b_original.png?v=cb693e05" class="thumbnail n02">
                                             <span class="frame deferred">
-                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxNTAgMzExIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjMxMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery03/0756c52b.png?v=6df00e10" alt="Проектирование автономного электроснабжения частного дома в Сочи"/>
+                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxNTAgMzExIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjMxMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery03/0756c52b.png?v=cb693e05" alt="Проектирование автономного электроснабжения частного дома в Сочи"/>
                                             </span>
                                         </a>
                                         <div class="caption">
@@ -6256,9 +6357,35 @@
                     state: true,
                     replay: false
                 });
+                onvisible.add('.text-component.style-8', {
+                    style: 'fade-in',
+                    speed: 1000,
+                    intensity: 5,
+                    threshold: 3,
+                    delay: 0,
+                    state: true,
+                    replay: false
+                });
                 ready.run();
             }
             )();
         </script>
+
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109772422', 'ym');
+
+        ym(109772422, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/109772422" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+
+        <!-- Поставьте этот кусок строго перед самым тегом </body>, прямо под кодом Метрики -->
+    
     </body>
 </html>
