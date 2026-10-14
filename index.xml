@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Андрей Мурдасов</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content on Андрей Мурдасов</description>
+		<generator>Hugo</generator>
+		<language>ru</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Проект электрики и электроснабжения (ЭОМ) в Сочи</title>
+				<link>http://localhost:1313/page/electrika-proekt/</link>
+				<pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/page/electrika-proekt/</guid>
+				<description>Профессиональное проектирование электрики в квартире и доме. Точный расчет проекта электрики, нагрузок и сечений кабеля по выгодной цене. Проект электрики и электроснабжения (ЭОМ) в Сочи</description>
+			</item>
+			<item>
+				<title>Автономное и резервное питание в Сочи</title>
+				<link>http://localhost:1313/page/autonomnoe-pitanie/</link>
+				<pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/page/autonomnoe-pitanie/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Проектирование и монтаж систем резервного питания&lt;/strong&gt; для частных домов, вилл и коммерческих объектов. Профессиональное &lt;strong&gt;подключение генератора к дому, установка инвертора&lt;/strong&gt; и автоматического резервного питания под ключ (гибридные инверторы, литиевые АКБ, генераторы с АВР).&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Обмер помещений в Сочи</title>
+				<link>http://localhost:1313/page/obmer-sochi/</link>
+				<pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/page/obmer-sochi/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Обмер помещений в Сочи.&lt;/strong&gt;&#xA;Создание &lt;strong&gt;точных обмерных планов и замер помещений для дизайн-проектов&lt;/strong&gt; по собственной технологии с минимальной погрешностью.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Ремонт квартир и домов в Сочи</title>
+				<link>http://localhost:1313/page/remont-sochi/</link>
+				<pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/page/remont-sochi/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Ремонт квартир и домов в Сочи.&lt;/strong&gt;&#xA;Организую &lt;strong&gt;капитальный и косметический ремонт под ключ&lt;/strong&gt;. Составление честных смет, технический надзор за мастерами, закупка материалов и сдача объекта.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
